@@ -10,10 +10,48 @@
 
 html {
     font-size: 62.5%;
-    color: #fff;
 }
 
 h1 {
     font-size: 1.6rem;
     background-color: var(--color-primary);
+}
+
+.product {
+}
+.product__thumbnails {
+}
+.product__image {
+}
+.product__details {
+}
+.product__manufacture {
+}
+.product__product-name {
+}
+.product__description {
+}
+.product__pricing {
+}
+.product__price {
+}
+.product__discount {
+}
+.product__original-price {
+}
+.product__sizes {
+}
+.product__size {
+}
+.product__size {
+}
+.product__size {
+}
+.product__size {
+}
+.product__size {
+}
+.product__button {
+}
+.image-container {
 }
