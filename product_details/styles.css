@@ -12,6 +12,13 @@ html {
     font-size: 62.5%;
 }
 
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
 h1 {
     font-size: 1.6rem;
     background-color: var(--color-primary);
@@ -23,6 +30,10 @@ h1 {
     height: 50rem;
     margin: 2rem;
     max-width: 120rem;
+    box-shadow: -5px 5px 20px rgba(0, 0, 0, 0.2);
+    padding: 1rem;
+    border-radius: 1rem;
+    background-color: rgb(237, 237, 237);
 }
 .product__thumbnails {
     width: 12rem;
@@ -38,11 +49,18 @@ h1 {
 }
 
 .thumbnail {
-    width: 100%;
+    /* width: 100%; */
     height: auto; /* Or set a specific height, like 250px */
     overflow: hidden;
     position: relative;
+    filter: grayscale(80%);
 }
+
+.thumbnail:hover {
+    filter: grayscale(0%);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
 .thumbnail__image {
     width: 100%;
     height: auto; /* Make sure the image covers the container */
@@ -50,9 +68,11 @@ h1 {
     display: block;
 }
 .product__image {
-    width: 50rem;
-    height: 50rem;
+    /* width: 50rem; */
+    /* height: auto; */
     margin-right: 2rem;
+    flex-grow: 4;
+    height: auto;
 }
 .image-container {
     width: 100%;
@@ -71,6 +91,7 @@ h1 {
     flex-grow: 4;
     display: flex;
     flex-direction: column;
+    justify-content: center;
 }
 .product__manufacture {
     color: rgb(0, 110, 255);
@@ -125,6 +146,7 @@ h1 {
 
 .product__size:hover {
     background-color: rgb(116, 116, 116);
+    cursor: pointer;
 }
 .product__button {
     height: 3.5rem;
@@ -135,6 +157,38 @@ h1 {
     background-color: blue;
     color: white;
     font-weight: 700;
+    cursor: pointer;
+    box-shadow: 2px 0px 2px rgba(0, 0, 0, 0.2),
+        inset 3px 3px 5px rgba(255, 255, 255, 0.8);
+    transition: all ease-in 0.1s;
 }
-.image-container {
+
+.product__button:hover {
+    transform: translateY(-3px);
+    box-shadow: 5px 0px 8px rgba(0, 0, 0, 0.2),
+        inset 3px 3px 5px rgba(255, 255, 255, 0.8);
+}
+
+.product__button:active {
+    transform: translateY(2px);
+    box-shadow: inset 3px 3px 5px rgba(0, 0, 0, 0.5),
+        inset -3px -3px 5px rgba(255, 255, 255, 0.8);
+}
+
+@media screen and (max-width: 758px) {
+    .product {
+        flex-direction: column;
+        height: auto;
+    }
+    .product__image {
+        order: -1;
+        width: auto;
+        max-width: 25rem;
+        align-self: center;
+        margin-bottom: 1rem;
+    }
+    .product__thumbnails {
+        flex-direction: row;
+        margin-bottom: 2rem;
+    }
 }
