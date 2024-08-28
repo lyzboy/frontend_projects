@@ -127,6 +127,7 @@ body {
     z-index: 1;
     border-radius: 50%;
     background-color: var(--tertiary-color);
+    transition: 0.3s all ease;
 }
 
 .header__shape2 {
@@ -138,6 +139,16 @@ body {
     z-index: 1;
     border-radius: 50%;
     background-color: var(--secondary-color);
+}
+
+.card__header:hover .header__shape1 {
+    bottom: -8rem;
+    right: -3rem;
+}
+
+.card__header:hover .header__shape2 {
+    top: -4rem;
+    left: -4rem;
 }
 
 .header__pic > img {
