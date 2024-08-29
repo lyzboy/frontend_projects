@@ -116,6 +116,9 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    filter: grayscale(80%);
+    z-index: 10;
+    transition: 0.5s all ease;
 }
 
 .header__shape1 {
@@ -139,16 +142,22 @@ body {
     z-index: 1;
     border-radius: 50%;
     background-color: var(--secondary-color);
+    transition: 0.3s all ease;
 }
 
 .card__header:hover .header__shape1 {
-    bottom: -8rem;
-    right: -3rem;
+    transform: translateX(20px);
 }
 
 .card__header:hover .header__shape2 {
-    top: -4rem;
-    left: -4rem;
+    transform: translateX(20px);
+}
+
+.card__header:hover .header__pic {
+    filter: grayscale(0%);
+    z-index: 10;
+    transform: scale(1.2);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 .header__pic > img {
