@@ -16,7 +16,9 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    max-height: 100vh;
+    width: 100vw;
+    height: 100%;
 }
 
 h1 {
@@ -26,17 +28,27 @@ h1 {
 
 .product {
     display: flex;
+    flex-shrink: 1;
     flex-direction: row;
-    height: 50rem;
+    height: 100%;
     margin: 2rem;
+    width: 100%rem;
     max-width: 120rem;
+    max-height: 50rem;
     box-shadow: -5px 5px 20px rgba(0, 0, 0, 0.2);
     padding: 1rem;
     border-radius: 1rem;
     background-color: rgb(237, 237, 237);
 }
+
+.product__images {
+    display: flex;
+    flex-grow: 1;
+    width: 50%;
+    flex-shrink: 1;
+}
 .product__thumbnails {
-    width: 12rem;
+    flex-grow: 1;
     margin: 0 2rem;
     display: flex;
     flex-direction: column;
@@ -68,11 +80,10 @@ h1 {
     display: block;
 }
 .product__image {
-    /* width: 50rem; */
-    /* height: auto; */
     margin-right: 2rem;
-    flex-grow: 4;
+    flex-grow: 3;
     height: auto;
+    display: flex;
 }
 .image-container {
     width: 100%;
@@ -82,13 +93,13 @@ h1 {
 }
 
 .image-container__image {
-    width: 100%;
+    width: auto;
     height: 100%; /* Make sure the image covers the container */
     object-fit: cover; /* Scale the image properly within the container */
     display: block;
 }
 .product__details {
-    flex-grow: 4;
+    flex-grow: 1;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -180,15 +191,62 @@ h1 {
         flex-direction: column;
         height: auto;
     }
+    .product__images {
+        height: 15rem;
+    }
     .product__image {
         order: -1;
         width: auto;
         max-width: 25rem;
         align-self: center;
         margin-bottom: 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+    .image-container {
+        flex-grow: 1;
+        overflow: hidden;
+        position: relative;
+    }
+    .thumbnail {
+        /* width: 100%; */
+        height: 4rem; /* Or set a specific height, like 250px */
+        display: flex;
     }
     .product__thumbnails {
         flex-direction: row;
-        margin-bottom: 2rem;
+        margin-bottom: 1rem;
+    }
+    .product__manufacture {
+        font-size: 1.2rem;
+    }
+    .product__product-name {
+        font-size: 2.5rem;
+        margin-bottom: 0.5rem;
+    }
+    .product__description {
+        font-size: 1.4rem;
+        margin-bottom: 0.5rem;
+    }
+    .product__pricing {
+        margin-bottom: 0.5rem;
+    }
+    .product__price {
+        font-size: 2rem;
+    }
+    .product__discount {
+        font-size: 1.2rem;
+    }
+    .product__original-price {
+        font-size: 1rem;
+    }
+    .product__sizes {
+        height: 1.2rem;
+    }
+    .product__size {
+        font-size: 1.2rem;
+        height: 1.3rem;
     }
 }
