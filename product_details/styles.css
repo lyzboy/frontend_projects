@@ -32,7 +32,7 @@ h1 {
     flex-direction: row;
     height: 100%;
     margin: 2rem;
-    width: 100%rem;
+    width: 100%;
     max-width: 120rem;
     max-height: 50rem;
     box-shadow: -5px 5px 20px rgba(0, 0, 0, 0.2);
@@ -43,16 +43,15 @@ h1 {
 
 .product__images {
     display: flex;
-    flex-grow: 1;
     width: 50%;
-    flex-shrink: 1;
 }
 .product__thumbnails {
-    flex-grow: 1;
+    flex: 1 1 25rem;
     margin: 0 2rem;
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
+    max-width: 10rem;
 }
 
 .thumbnail,
@@ -61,8 +60,7 @@ h1 {
 }
 
 .thumbnail {
-    /* width: 100%; */
-    height: auto; /* Or set a specific height, like 250px */
+    height: auto;
     overflow: hidden;
     position: relative;
     filter: grayscale(80%);
@@ -81,22 +79,28 @@ h1 {
 }
 .product__image {
     margin-right: 2rem;
-    flex-grow: 3;
+    flex: 3 3 48rem;
     height: auto;
     display: flex;
+    height: 100%;
+    align-items: center;
 }
 .image-container {
     width: 100%;
     height: 100%; /* Or set a specific height, like 250px */
     overflow: hidden;
     position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .image-container__image {
-    width: auto;
-    height: 100%; /* Make sure the image covers the container */
+    width: 100%;
+    height: auto; /* Make sure the image covers the container */
     object-fit: cover; /* Scale the image properly within the container */
-    display: block;
+    border-radius: 1rem;
+    min-width: 30rem;
 }
 .product__details {
     flex-grow: 1;
@@ -186,18 +190,27 @@ h1 {
         inset -3px -3px 5px rgba(255, 255, 255, 0.8);
 }
 
-@media screen and (max-width: 758px) {
+.product__size.active {
+    background-color: black;
+    color: white;
+}
+
+@media screen and (max-width: 900px) {
     .product {
         flex-direction: column;
         height: auto;
     }
     .product__images {
-        height: 15rem;
+        height: 25rem;
+        width: 100%;
+    }
+    .product__details {
+        align-items: center;
     }
     .product__image {
         order: -1;
         width: auto;
-        max-width: 25rem;
+
         align-self: center;
         margin-bottom: 1rem;
         display: flex;
@@ -210,14 +223,20 @@ h1 {
         overflow: hidden;
         position: relative;
     }
+    .image-container__image {
+        height: 100%;
+        width: auto;
+    }
     .thumbnail {
         /* width: 100%; */
         height: 4rem; /* Or set a specific height, like 250px */
         display: flex;
+        min-width: 2.5rem;
     }
     .product__thumbnails {
         flex-direction: row;
         margin-bottom: 1rem;
+        max-width: 100%;
     }
     .product__manufacture {
         font-size: 1.2rem;
@@ -244,6 +263,7 @@ h1 {
     }
     .product__sizes {
         height: 1.2rem;
+        justify-content: center;
     }
     .product__size {
         font-size: 1.2rem;
