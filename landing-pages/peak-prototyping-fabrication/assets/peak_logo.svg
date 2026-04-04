@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <rect width="800" height="600" fill="#121212"/>
+
+  <g transform="translate(0, -20)">
+    <path d="M 400,105 C 400,70 460,80 450,40" fill="none" stroke="#FF5F15" stroke-width="4" stroke-linecap="round"/>
+
+    <rect x="380" y="105" width="40" height="15" fill="#708090" rx="2"/>
+    <rect x="385" y="120" width="30" height="10" fill="#5C6975"/>
+    
+    <polygon points="385,130 415,130 405,155 395,155" fill="#D4AF37"/>
+    <polygon points="395,155 405,155 402,165 398,165" fill="#AA8C2C"/>
+
+    <line x1="400" y1="165" x2="400" y2="180" stroke="#FF5F15" stroke-width="4"/>
+
+    <polygon points="400,180 340,270 400,290" fill="#FF5F15"/>
+    <polygon points="400,180 460,270 400,290" fill="#E6500A"/>
+
+    <polygon points="340,270 200,420 300,420" fill="#4B5661"/>
+    <polygon points="340,270 300,420 400,290" fill="#708090"/>
+    <polygon points="400,290 300,420 410,420" fill="#5C6975"/>
+    <polygon points="400,290 410,420 460,270" fill="#8596A6"/>
+    <polygon points="460,270 410,420 500,420" fill="#5C6975"/>
+    <polygon points="460,270 500,420 600,420" fill="#4B5661"/>
+    
+    <polygon points="300,420 200,420 250,350" fill="#5C6975"/>
+    <polygon points="340,270 250,350 300,420" fill="#525E6A"/>
+    
+    <polygon points="500,420 600,420 550,350" fill="#5C6975"/>
+    <polygon points="460,270 550,350 500,420" fill="#708090"/>
+  </g>
+
+  <g text-anchor="middle" font-family="system-ui, -apple-system, sans-serif">
+    <text x="400" y="475" font-size="44" font-weight="800" fill="#708090" letter-spacing="1">
+      PEAK PROTOTYPING
+    </text>
+    <text x="400" y="525" font-size="44" font-weight="800" fill="#FF5F15" letter-spacing="1">
+      &amp; FABRICATION
+    </text>
+    <text x="400" y="565" font-size="14" font-weight="600" fill="#5C6975" letter-spacing="3">
+      PRECISION ENGINEERED. LOCALLY FORGED.
+    </text>
+  </g>
+</svg>
