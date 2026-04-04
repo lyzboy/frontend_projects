@@ -1,0 +1,41 @@
+Business Name: Peak Prototyping & Fabrication
+
+Location: Delta, Colorado
+
+What They Do: Custom 3D printing (both FDM and resin), rapid prototyping, and 
+small-batch mechanical part fabrication. They cater to local industrial clients 
+needing replacement parts as well as hobbyists requiring high-detail custom 
+models.
+
+Business Description: A local, precision-focused manufacturing shop dedicated to 
+turning digital drafting and CAD designs into physical realities. Peak 
+Prototyping bridges the gap between digital modeling and physical manufacturing, 
+specializing in durable mechanical components, custom jigs, and high-fidelity 
+resin prototypes.
+
+Employees: A tight-knit team of four:
+
+1 Lead Mechanical Designer: Handles CAD reviews and custom drafting.
+
+2 Fabrication Technicians: Manage the 3D printer farms (monitoring temperatures, 
+swapping filaments/resins) and handle post-processing (washing, curing, and assembly).
+
+1 Shop Manager: Handles client intake, material sourcing, and logistics.
+
+Where They Operate: They operate out of a physical storefront and fabrication 
+workshop on the Western Slope, serving local walk-in clients while also offering 
+remote design and shipping services for regional customers.
+
+Business Motto: "Precision Engineered. Locally Forged."
+
+Logo Description & Colors: The logo features a geometric, low-poly mountain peak 
+being actively extruded from a 3D printer nozzle.
+
+Primary Color: Safety Orange (Hex: #FF5F15) - representing energy, 
+fabrication, and industry.
+
+Secondary Color: Industrial Steel Grey (Hex: #708090) - representing 
+durability and mechanical precision.
+
+Background: Designed to contrast well against Carbon Black (Hex: #121212) or 
+crisp white.
